@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Guess My Number!</h1>
+      <p class="between">(Between 1 and 20)</p>
+      <button class="btn again" id="again-reset">Again!</button>
+      <div class="number" id="Right-Num">?</div>
+    </header>
+    <main>
+        <form class="left" id="Guess-place">
+            <input type="number" class="guess outline-none"  id="user-guess"  />
+            <button class="btn check" id="check-btn">Check!</button>
+          </form>
+      <section class="right">
+        <p class="message" id="Start-or-Complete">Start guessing...</p>
+        <p class="label-score text-[17px]">💯 Attempts: <span class="score" id="Attempts">0</span></p>
+        <p class="label-highscore text-[17px]">
+          🥇 Right Guess's: <span class="Right-Attempls" id="Right-Attempls">0</span>
+        </p>
+        <p class="label-highscore text-[17px]">
+            🥇 Wrong Guess's: <span class="Right-Attempls" id="Wrong-Attempls">0</span>
+          </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
